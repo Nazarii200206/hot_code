@@ -2,46 +2,104 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Інтернет для Водіїв Європи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Інтернет по Європі для водіїв</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    .banner {
-      width: 100%;
-      max-width: 1000px;
-      margin: 40px auto;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      border-radius: 12px;
-      overflow: hidden;
-      background-color: white;
+      background: #f5f7fa;
+      color: #333;
     }
 
     .banner img {
       width: 100%;
+      max-height: 700px;
+      object-fit: cover;
       display: block;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      margin-top: -30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1, h2 {
+      color: #004aad;
+    }
+
+    .tariffs li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .contacts {
+      margin-top: 30px;
+    }
+
+    .contacts p {
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .contacts img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
     }
 
     .footer {
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      padding-bottom: 30px;
+      padding: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Обкладинка -->
   <div class="banner">
-    <img src="https://nazarii200206.github.io/hot_code/banner.png" alt="Інтернет і навігація для водіїв Європи">
+    <img src="https://nazarii200206.github.io/hot_code/banner.png" alt="Інтернет для водіїв">
+  </div>
+
+  <!-- Основна частина -->
+  <div class="content">
+    <h1>Інтернет і навігація для водіїв Європи</h1>
+    <p>Швидко. Зручно. Доступно. Працює у 34 країнах Європи!</p>
+
+    <h2>Наші тарифи</h2>
+    <ul class="tariffs">
+      <li>📡 20GB по всій Європі — 4€ (поповнення)</li>
+      <li>🇪🇸 400GB в Іспанії + 100GB у роумінгу — 30€</li>
+      <li>🇪🇸 300GB в Іспанії + 26GB у роумінгу — 35€</li>
+    </ul>
+
+    <h2>Контакти</h2>
+    <div class="contacts">
+      <p><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/> +34 672 294 618 Назарій</p>
+      <p><img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png"/> @nazzaroo</p>
+      <p><img src="https://img.icons8.com/color/48/000000/viber.png"/> +380 630300777</p>
+      <p><img src="https://img.icons8.com/color/48/000000/gmail-new.png"/> nazariibuian@gmail.com</p>
+    </div>
   </div>
 
   <div class="footer">
-    © 2025 Назарій. Усі права захищено.
+    © 2025 Назарій. Всі права захищено.
   </div>
 
 </body>
